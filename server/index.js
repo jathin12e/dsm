@@ -15,10 +15,23 @@ app.all('/api/*', (req, res) => res.status(404).json({ error: 'Not found' }));
 
 // Hashed build assets never change, so they can be cached for a year.
 app.use('/assets', express.static(path.join(DIST, 'assets'), { immutable: true, maxAge: '1y' }));
-app.use(express.static(DIST, { maxAge: '1h' }));
+// HTML, the service worker and the manifest must always be revalidated, so a new
+// deploy is picked up immediately instead of pointing at old, deleted asset files.
+const NO_CACHE = /(\.html|sw\.js|\.webmanifest)$/;
+app.use(
+  express.static(DIST, {
+    maxAge: '1h',
+    setHeaders: (res, filePath) => {
+      if (NO_CACHE.test(filePath)) res.setHeader('Cache-Control', 'no-cache');
+    },
+  })
+);
 
 // Single-page app: every other route is handled by React Router.
-app.get('*', (req, res) => res.sendFile(path.join(DIST, 'index.html')));
+app.get('*', (req, res) => {
+  res.setHeader('Cache-Control', 'no-cache');
+  res.sendFile(path.join(DIST, 'index.html'));
+});
 
 app.listen(PORT, () => {
   console.log(`Dying Seed Ministries running at http://localhost:${PORT}`);

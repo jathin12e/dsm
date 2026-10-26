@@ -286,6 +286,10 @@
   width: 100%;
 }
 
+.mobile-menu__cta + .mobile-menu__cta {
+  margin-top: 0.75rem;
+}
+
 .mobile-menu__note {
   margin: 1rem 0 0;
   text-align: center;

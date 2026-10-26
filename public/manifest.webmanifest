@@ -1,0 +1,23 @@
+{
+  "name": "Dying Seed Ministries",
+  "short_name": "Dying Seed",
+  "description": "A Seed of Faith. A Harvest of Hope. Serving Christ through discipleship and mission since 1982.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#FAF8F3",
+  "theme_color": "#183D32",
+  "lang": "en-IN",
+  "categories": ["lifestyle", "education"],
+  "icons": [
+    { "src": "/images/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/images/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/images/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Prayer Needs", "url": "/support#prayer-needs", "icons": [{ "src": "/images/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Contact Us", "url": "/contact", "icons": [{ "src": "/images/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone } from 'lucide-react';
 import Logo from './Logo.jsx';
+import InstallAppButton from './InstallAppButton.jsx';
 import { navLinks, callingLinks } from '../data/navigation.js';
 import { ministryInfo, scripture, legalLinks, ESTABLISHED_YEAR } from '../data/ministryInfo.js';
 import { offices } from '../data/contactInfo.js';
@@ -74,9 +75,12 @@ export default function Footer() {
             ))
           )}
           <p className="footer__offices">Offices in Chennai, Bengaluru &amp; Madurai</p>
-          <Link to="/contact" className="btn btn--outline-light footer__contact-btn">
-            Contact Us
-          </Link>
+          <div className="footer__actions">
+            <Link to="/contact" className="btn btn--outline-light footer__contact-btn">
+              Contact Us
+            </Link>
+            <InstallAppButton className="btn btn--gold footer__contact-btn" />
+          </div>
         </div>
       </div>
 

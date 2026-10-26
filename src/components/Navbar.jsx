@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'motion/react';
 import { ArrowRight, Menu, X } from 'lucide-react';
 import Logo from './Logo.jsx';
+import InstallAppButton from './InstallAppButton.jsx';
 import { navLinks } from '../data/navigation.js';
 import '../styles/Navbar.css';
 
@@ -125,6 +126,7 @@ export default function Navbar() {
               <Link to="/support" className="btn btn--gold btn--lg mobile-menu__cta" onClick={() => setOpen(false)}>
                 Get Involved
               </Link>
+              <InstallAppButton className="btn btn--outline btn--lg mobile-menu__cta" />
               <p className="mobile-menu__note">Head Office: Chennai, Tamil Nadu</p>
             </motion.div>
           )}
