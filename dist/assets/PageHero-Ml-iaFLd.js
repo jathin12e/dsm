@@ -1,6 +1,0 @@
-import{j as a,m as r}from"./motion-Ds4jvTrb.js";import{L as o}from"./react-BmCMblh5.js";import{c,k as l}from"./index-CLS_Y5ky.js";/**
- * @license lucide-react v0.460.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */const h=c("ChevronRight",[["path",{d:"m9 18 6-6-6-6",key:"mthhwq"}]]),s=[.22,1,.36,1];function x({title:e,subtitle:i,crumb:t,children:n}){return a.jsxs("section",{className:"page-hero","aria-labelledby":"page-title",children:[a.jsx(l,{className:"page-hero__sprig"}),a.jsxs("div",{className:"container page-hero__inner",children:[a.jsx("nav",{"aria-label":"Breadcrumb",children:a.jsxs("ol",{className:"breadcrumb",children:[a.jsxs("li",{children:[a.jsx(o,{to:"/",children:"Home"}),a.jsx(h,{size:14,"aria-hidden":"true"})]}),a.jsx("li",{"aria-current":"page",children:t??e})]})}),a.jsx(r.h1,{id:"page-title",className:"page-hero__title",initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{duration:.55,ease:s},children:e}),i&&a.jsx(r.p,{className:"page-hero__subtitle",initial:{opacity:0,y:16},animate:{opacity:1,y:0},transition:{duration:.55,delay:.12,ease:s},children:i}),n]})]})}export{x as P};

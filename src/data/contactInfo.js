@@ -44,11 +44,11 @@ export const offices = [
 
 export const contactConfig = {
   /**
-   * URL of a form-handling service (e.g. Formspree, a serverless function, or
-   * the ministry's own API) that accepts a JSON POST. While `null`, the form
-   * validates input but clearly tells visitors that nothing has been sent.
+   * The site's own server endpoint (server/contact.js), which emails enquiries
+   * through Resend. Set to `null` to disable sending — the form then validates
+   * input but clearly tells visitors that nothing has been sent.
    */
-  formEndpoint: null,
+  formEndpoint: '/api/contact',
   email: null,
   socialLinks: [],
 };

@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: dying-seed-ministries
+    runtime: node
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: RESEND_API_KEY
+        sync: false # entered in the Render dashboard, never committed
+      - key: CONTACT_TO_EMAIL
+        value: 1.ayyappan@gmail.com
