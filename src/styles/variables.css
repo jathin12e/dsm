@@ -1,0 +1,64 @@
+:root {
+  /* Brand colours */
+  --color-forest: #183d32;
+  --color-forest-soft: #22513f;
+  --color-forest-dark: #102b24;
+  --color-sage: #789681;
+  --color-sage-light: #e4ece6;
+  --color-gold: #c79a50;
+  --color-gold-hover: #d4aa63;
+  --color-gold-deep: #8a6526; /* gold tone with AA contrast on light backgrounds */
+  --color-gold-light: #f4e9d3;
+  --color-ivory: #faf8f3;
+  --color-ivory-deep: #f2ede2;
+  --color-white: #ffffff;
+  --color-text: #202824;
+  --color-text-muted: #647168;
+  --color-border: #e4ded1;
+  --color-border-strong: #d4ccbb;
+  --color-on-dark: #f4f1e8;
+  --color-on-dark-muted: #bccac1;
+  --color-error: #a23b2a;
+  --color-error-bg: #fbeeeb;
+  --color-success: #2f6b4f;
+  --color-success-bg: #e8f2ec;
+
+  /* Typography */
+  --font-heading: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-base: 1.0625rem;
+  --fs-md: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
+  --fs-lg: clamp(1.1875rem, 1.05rem + 0.6vw, 1.4rem);
+  --fs-h3: clamp(1.25rem, 1.12rem + 0.55vw, 1.5rem);
+  --fs-h2: clamp(1.85rem, 1.4rem + 1.8vw, 2.75rem);
+  --fs-h1: clamp(2.25rem, 1.6rem + 2.8vw, 3.75rem);
+  --fs-display: clamp(2.5rem, 1.55rem + 4vw, 4.4rem);
+
+  --lh-tight: 1.18;
+  --lh-snug: 1.4;
+  --lh-body: 1.72;
+
+  /* Layout */
+  --container: 1200px;
+  --container-narrow: 820px;
+  --gutter: clamp(1rem, 0.4rem + 2.6vw, 2rem);
+  --section-y: clamp(4rem, 2.8rem + 5vw, 7rem);
+  --nav-h: 84px;
+
+  /* Shape & depth */
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 1px 2px rgba(16, 43, 36, 0.05), 0 2px 8px rgba(16, 43, 36, 0.04);
+  --shadow-md: 0 10px 30px rgba(16, 43, 36, 0.08);
+  --shadow-lg: 0 24px 60px rgba(16, 43, 36, 0.12);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 180ms;
+  --dur: 240ms;
+}
